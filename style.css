@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700&subset=latin-ext');
+
+body {
+	margin: 0;
+	background-color: black;
+	color: lightgray;
+	font-size: 28px;
+	font-family: 'Inconsolata';
+	font-weight: 700;
+}
+.container {
+	width: 900px;
+	margin: 0 auto;
+	overflow: auto;
+}
+.header {
+	width: 900px;
+	margin: 50px 0;
+	text-align: center;
+	font-size: 48px;
+}
+
+.col-5 {
+	width: 50%;
+	float: left;
+	min-height: 280px;
+}
+.letter {
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	padding: 5px;
+	margin: 5px;
+	border: 3px solid gray;
+	border-radius: 15px;
+	float: left;
+	cursor: pointer;
+}
+.letter:hover {
+	background-color: #222222;
+	color: white;
+	border: solid white;
+}
+.trafiona {
+	background-color: #003300;
+	color: #00C000;
+	border: 3px solid #00C000;
+	cursor: default;
+}
+.trafiona:hover {
+	background-color: #003300;
+	color: #00C000;
+	border: 3px solid #00C000;
+	cursor: default;
+}
+.nietrafiona {
+	background-color: #330000;
+	color: #C00000;
+	border: 3px solid #C00000;
+	cursor: default;
+}
+.nietrafiona:hover {
+	background-color: #330000;
+	color: #C00000;
+	border: 3px solid #C00000;
+	cursor: default;
+}
+.end {
+	width: 95%;
+	margin: 0 auto;
+	text-align: center;
+}
+.endbtn {
+	width: 65%;
+	margin: 50px 17.5%;
+	font-size: 30px;
+	font-family: 'Inconsolata';
+	font-weight: 700;
+	border: solid 3px white;
+	text-align: center;
+	background: #000;
+	color: white;
+	padding: 20px;
+	transition: all 1s ease;
+	cursor: pointer;
+}
+.endbtn:hover {
+	background: white;
+	color: black;
+}
