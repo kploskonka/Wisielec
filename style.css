@@ -8,10 +8,41 @@ body {
 	font-family: 'Inconsolata';
 	font-weight: 700;
 }
+.titlescreen {
+	background-color: black;
+	width: 900px;
+	display: none;
+	z-index: 1000;
+	transition: all 0.5s ease;
+	margin: 0 auto;
+}
+.title {
+	text-align: center;
+	font-size: 70px;
+}
+.titleimg {
+	width: 350px;
+	margin: 0 275px;
+	align-self: center;
+}
 .container {
 	width: 900px;
 	margin: 0 auto;
 	overflow: auto;
+}
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+.animate-top {
+	position: relative;
+	-webkit-animation-name: animatetop;
+	-webkit-animation-duration: 1s;
+	animation-name: animatetop;
+	animation-duration: 1s
 }
 .header {
 	width: 900px;
@@ -41,25 +72,25 @@ body {
 	color: white;
 	border: solid white;
 }
-.trafiona {
+.correct {
 	background-color: #003300;
 	color: #00C000;
 	border: 3px solid #00C000;
 	cursor: default;
 }
-.trafiona:hover {
+.correct:hover {
 	background-color: #003300;
 	color: #00C000;
 	border: 3px solid #00C000;
 	cursor: default;
 }
-.nietrafiona {
+.incorrect {
 	background-color: #330000;
 	color: #C00000;
 	border: 3px solid #C00000;
 	cursor: default;
 }
-.nietrafiona:hover {
+.incorrect:hover {
 	background-color: #330000;
 	color: #C00000;
 	border: 3px solid #C00000;
@@ -88,6 +119,16 @@ body {
 	background: white;
 	color: black;
 }
+.startbtn {
+	width: 30%;
+	margin: 80px 35%;
+}
+.restartbtn {
+	width: 25%;
+	margin: 20px 37.5%;
+	font-size: 25px;
+	padding: 15px;
+}
 .footer {
 	width: 100%;
 	position: absolute;
@@ -103,4 +144,22 @@ body {
 }
 .footer a:hover {
 	font-weight: bold;
+}
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from {bottom: -100px; opacity: 0} 
+  to {bottom: 0; opacity: 1}
+}
+@-webkit-keyframes animatetop {
+  from {bottom: 50px; opacity: 0} 
+  to {bottom: 0; opacity: 1}
+}
+
+@keyframes animatetop { 
+  from {bottom: 50px; opacity: 0} 
+  to {bottom: 0; opacity: 1}
 }

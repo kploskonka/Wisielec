@@ -2,11 +2,16 @@
 <html lang="pl">
 <head>
 	<meta charset="UTF-8">
-	<title>Wisielec v0.2</title>
+	<title>Wisielec v.0.2</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="container">
+	<div class="titlescreen" id="titlescreen">
+		<h1 class="title">Wisielec v.0.2 by Rzyna</h1>
+		<img src="img/s9.jpg" class="titleimg animate-top">
+		<button class="endbtn startbtn" id="startbtn" onclick="start()">Start</button>
+	</div>
+	<div class="container animate-bottom" id="container">
 		<header class="header" id="password"></header>
 		<div class="col-5" id="board"><img src="img/s0.jpg"></div>
 		<div class="col-5" id="alphabet">
@@ -46,6 +51,7 @@
 			<div class="letter"></div>
 			<div class="letter"></div>
 		</div>
+		<button class="endbtn restartbtn" id="restartbtn" onclick="reset()">Poddaję się!</button>
 	</div>
 	<footer class="footer">
 		<p>Project by <a href="http://miroslawzelent.pl/">Mirosław Zelent</a></p>
