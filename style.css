@@ -8,6 +8,16 @@ body {
 	font-family: 'Inconsolata';
 	font-weight: 700;
 }
+#loader-wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: black;
+  /* display: none; */
+}
 .titlescreen {
 	background-color: black;
 	width: 900px;
@@ -103,7 +113,7 @@ body {
 }
 .endbtn {
 	width: 65%;
-	margin: 50px 17.5%;
+	margin: 50px 17.5% 0 17.5%;
 	font-size: 30px;
 	font-family: 'Inconsolata';
 	font-weight: 700;
@@ -128,6 +138,12 @@ body {
 	margin: 20px 37.5%;
 	font-size: 25px;
 	padding: 15px;
+}
+.backbtn {
+	width: 50%;
+    font-size: 15px;
+    padding: 10px;
+    margin: 20px 25%;
 }
 .footer {
 	width: 100%;

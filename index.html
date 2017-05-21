@@ -6,8 +6,10 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<div id="loader-wrapper">
+	</div>
 	<div class="titlescreen" id="titlescreen">
-		<h1 class="title">Wisielec v.0.2 by Rzyna</h1>
+		<h1 class="title">Wisielec v.0.2</h1>
 		<img src="img/s9.jpg" class="titleimg animate-top">
 		<button class="endbtn startbtn" id="startbtn" onclick="start()">Start</button>
 	</div>
@@ -51,7 +53,7 @@
 			<div class="letter"></div>
 			<div class="letter"></div>
 		</div>
-		<button class="endbtn restartbtn" id="restartbtn" onclick="reset()">Poddaję się!</button>
+		<button class="endbtn restartbtn" id="restartbtn" onclick="location.reload()">Poddaję się!</button>
 	</div>
 	<footer class="footer">
 		<p>Project by <a href="http://miroslawzelent.pl/">Mirosław Zelent</a></p>
